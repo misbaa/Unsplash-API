@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash API</title>
+    <link rel ="stylesheet" href ="./style.css">
+    <link rel ="stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+               <div id ="header">
+                <h2 style ="font-family: 'Inter', sans-serif;">
+                    <i id ="camera_icon" class="fa-solid fa-camera"></i>
+                    Unsplash API Demo
+                </h2>
+                
+                
+                <div id ="search_box">
+                    <input id ="input" onkeydown="enterKeyPressHandler" placeholder="Search" type ="text">
+                    <i id ="search_icon" onclick="search()" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+               </div>
+            </div>
+        </header>
+        <input type ="button" class="button" value="Next" onclick="next()" />
+        <section>
+           <div class="conatiner">
+               <div id ="grid">
+                
+               </div>
+           </div>
+        </section>
+        
+    </main>
+   <script src ="./script.js"></script>
+   <script src ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+   <script src ="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script> 
+</body>
+</html>

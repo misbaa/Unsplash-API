@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    overflow-x:hidden;
+}
+.container{
+    width:1300px;
+    
+}
+header{
+    border-bottom: 5px solid orange;
+}
+#header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    min-height: 65px;
+    
+}
+#search_box{
+    position: relative;
+    width: 300px;
+}
+#search_box input{
+    width:100%;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 8px;
+    outline: none;
+}
+input:focus{
+    box-shadow: 0 0 5px orange;
+    border: 1px solid orange;
+}
+#search_icon {
+    color: orange;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    cursor:pointer;
+}
+#camera_icon{
+    margin-left: 10px;
+    color: orange;
+    font-size: 30px;
+}
+.button {
+    color: orange;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-color: orange;
+    cursor:pointer;
+}
+#grid{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.img{
+    width: 300px;
+    height: 250px;
+    margin-top: 15px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media(max-width: 1300px){
+    .container{
+        width:100%;
+    }
+}
+@media(max-width: 768px){
+    .img{
+        width: 100%;
+    }
+    #header {
+        margin: 10px 0;
+        padding: 20px;
+        gap: 10px;
+        justify-content: center;
+    }
+}
+@media(max-width: 480px){
+    #header h2{
+        text-align: center;
+    }
+}
