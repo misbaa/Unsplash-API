@@ -1,4 +1,4 @@
-let client_id ="9dXTXufmPAO5E6Ydr7ebx6K_3a-kt3MbuM1i-gXVA-M";
+let client_id ="";
 window.addEventListener("load", () => {
     let date = new Date();
     let hour = date.getHours();
